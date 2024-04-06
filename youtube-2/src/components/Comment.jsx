@@ -5,7 +5,7 @@ const Comment = ({id}) => {
     const [sset,ssset] = useState(false)
 
     const Cdata = async ()=>{
-        const data = await fetch("https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&order=relevance&maxResults=100&textFormat=plainText&videoId="+id+"&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+        const data = await fetch("https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&order=relevance&maxResults=100&textFormat=plainText&videoId="+id+"&key=AIzaSyBe")
         const json = await data.json()
         setcdata(json)
     }
