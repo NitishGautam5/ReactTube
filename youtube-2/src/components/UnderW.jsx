@@ -5,7 +5,7 @@ import Buttonlist from './Buttonlist'
 const UnderW = ({catid}) => {
     const [videos,setvideos] = useState(null)
     const getVideos =async ()=>{
-      const Videos = await fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId="+ catid +"&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+      const Videos = await fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId="+ catid +"&regionCode=IN&key=")
       const json = await Videos.json()
       setvideos(json.items)
     }
