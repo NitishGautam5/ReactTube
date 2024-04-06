@@ -14,8 +14,8 @@ const opendis = ()=>{
   const data = async () => {
     let Njson = await fetch(
       "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=" +
-        id.id +
-        "&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM"
+        id.id 
+        
     );
     let json = await Njson.json();
     setvideoitem(json);
