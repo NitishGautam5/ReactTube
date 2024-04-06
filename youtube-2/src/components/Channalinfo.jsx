@@ -7,7 +7,7 @@ const Channalinfo = () => {
     console.log()
     const [all,setall] = useState(null)
     const data = async ()=>{
-        const idata = await fetch("https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id="+id.cid+"&maxResults=50&key=AIzaSyA5L3v4HbB2icJ2n-Agn0T_nfPWxjkKmRA")
+        const idata = await fetch("https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id="+id.cid+"&maxResults=50&kgn0T_nfPWxjkKmRA")
         const json =await idata.json()
         setall(json)
     }
