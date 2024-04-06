@@ -6,30 +6,30 @@ import {API_KYE} from '../utils/Constants/Constants'
 const Videocontainer = () => {
   let [vidurl,setvidurl] = useState(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${API_KYE}`)
   const changetogaming = ()=>{
-    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=20&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=20&regionCode=IN&key=yZi4CtVfM")
   }
   const changetomusic = ()=>{
-    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=10&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=10&regionCode=IN&key=AIzaSyBevVfM")
   }
   const changetoall = ()=>{
     setvidurl(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${API_KYE}`)
   }
   const changetocomedy = ()=>{
-    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=23&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+    setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=23&regionCode=IN&key=wyZi4CtVfM")
   
     }
 
     const changetonews = ()=>{
-      setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=25&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+      setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=25&regionCode=IN&key=AIzaSyBev-M")
     
       }
       const changetoedu = ()=>{
-        setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=28&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+        setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=28&regionCode=IN&key=AM")
       
         }
 
         const changetoamime = ()=>{
-          setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=17&regionCode=IN&key=AIzaSyBev-Tjn7H0HLENbX3CUrcXNwyZi4CtVfM")
+          setvidurl(" https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&videoCategoryId=17&regionCode=IN&key=AIzVfM")
         }
          
     const [videos,setvideos] = useState(null)
