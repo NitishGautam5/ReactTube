@@ -8,7 +8,7 @@ const VcardForChannal = () => {
    const[vdata,setvdata] = useState(null)
    const[vids,setvids] = useState("qrG5nPhQaIk")
    const data = async ()=>{
-    const da = await fetch("https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId="+ id.cid+"&maxResults=50&key=AIzaSyA5L3v4HbB2icJ2n-Agn0T_nfPWxjkKmRA")
+    const da = await fetch("https://youtube.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId="+ id.cid+"&maxResults=50&key=AIz")
     const json = await da.json()
     setvdata(json)
      
