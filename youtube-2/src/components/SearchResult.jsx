@@ -8,7 +8,7 @@ const SearchResult = () => {
   const [data,setdata] = useState(null)
   const[vids,setvids] = useState("qrG5nPhQaIk")
   const handle = async ()=>{
-    const api = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+search+"&type=video&key=AIzaSyCJ7ki5Kqx4JcVEvINqOGUL1uj43mABVJs")
+    const api = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+search+"&type=video")
     const json = await api.json()
      setdata(json)
   }
